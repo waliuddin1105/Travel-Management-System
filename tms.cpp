@@ -84,6 +84,87 @@ class cabs{
         cout<<"--------------------------------------------------"<<endl;
         cout<<"Enter which type of cab you wanna use:";
         cin>>choice;
-        cout<<"How many kilo meters you wanna travel:";
+        cout<<"How many kilo meters you wanna travel:";git
         cin>>kilometers;
         i hirecab;
+if(choice==1)
+        {
+            cabCost=kilometers*30;
+            cout<<"\nYour tour will cost "<<cabCost<<" rupees for a standard cab"<<endl<<endl;
+            cout<<"Press 1 to hire this cab or "<<endl;
+            cout<<"Press 2 to select another cab: ";
+            cin>>hirecab;
+            
+             try{
+                if(hirecab!=1 && hirecab!=2)
+                {
+                    string g="Invalid input please enter choice 1 or 2 only!";
+                throw g;
+                }
+                
+            }
+            catch(s g)
+                {
+                    cout<<g<<endl;
+                    cin>>hirecab;
+            }
+            if(hirecab==1){
+                lastCabCost=cabCost;
+                cout<<"\nYou have succesfully hired the standard cab!"<<endl<<"Go to the main menu to receive your receipt"<<endl;
+            }
+            else if(hirecab==2)
+            {
+            	 system("CLS");
+            	cabDetails();
+			}   
+        }
+
+        else if(choice==2)
+        {
+            cabCost=50*kilometers;
+             cout<<"\nYour tour will cost "<<cabCost<<" rupees for a luxury cab"<<endl<<endl;
+            cout<<"Press 1 to hire this cab or "<<endl;
+            cout<<"Press 2 to select another cab: ";
+            cin>>hirecab;
+            try{
+                if(hirecab!=1 && hirecab!=2)
+                {
+                    s g="Invalid input please enter choice 1 or 2 only!";
+                throw g;
+                }
+                
+            }
+            catch(s g)
+                {
+                    cout<<g<<endl;
+                    cin>>hirecab;
+            }
+            if(hirecab==1){
+                lastCabCost=cabCost;
+                cout<<"You have succesfully hired the luxury cab!"<<endl<<"Go to the main menu to recieve your receipt"<<endl;
+            }
+            else if(hirecab==2)
+            {
+            	system("CLS");
+            	cabDetails();
+			}
+			lastCabCost = cabCost;
+            
+        }
+        
+
+        cout<<"\nPress any key to return to the main menu:";
+        getline(cin,retMenu);
+        cin.ignore();
+        if(retMenu=="a")
+        {
+        	system("cls");
+        	menuConstructor();
+		}
+        else
+        {
+        	system("cls");
+        	menuConstructor();
+		}
+    }
+    
