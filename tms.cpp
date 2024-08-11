@@ -62,3 +62,6 @@ class customer{
         }
         out<<"\n\nCustomer ID:"<<cusId<<endl<<"Customer Name:"<<name<<endl<<"Age:"<<age<<endl<<"Mobile number:"<<mobile<<endl<<"Adress:"<<adress<<endl<<"Gender:"<<gender<<endl;
     }
+     friend class menu;
+};
+int customer::cusId=0;
