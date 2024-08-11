@@ -84,7 +84,7 @@ class cabs{
         cout<<"--------------------------------------------------"<<endl;
         cout<<"Enter which type of cab you wanna use:";
         cin>>choice;
-        cout<<"How many kilo meters you wanna travel:";git
+        cout<<"How many kilo meters you wanna travel:";
         cin>>kilometers;
         i hirecab;
 if(choice==1)
@@ -167,4 +167,10 @@ if(choice==1)
         	menuConstructor();
 		}
     }
-    
+    friend class menu;
+     friend ostream &operator<<(ostream &umer_wali, const cabs &cab)
+    {
+        umer_wali << "Cab Choice: " << (cab.cabChoice == 1 ? "Standard Cab" : "Luxury Cab") << "\nKilometers: " << cab.kilometers << "\nCost: " << cab.cabCost << endl;
+        return umer_wali;
+    }
+};
