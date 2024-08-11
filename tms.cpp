@@ -84,6 +84,6 @@ class cabs{
         cout<<"--------------------------------------------------"<<endl;
         cout<<"Enter which type of cab you wanna use:";
         cin>>choice;
-        cout<<"How many kilometers you wanna travel:";
+        cout<<"How many kilo meters you wanna travel:";
         cin>>kilometers;
         i hirecab;
