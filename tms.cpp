@@ -341,6 +341,45 @@ friend class menu;
     
     };
 
+    double booking::hotelCost=0;
+
+class charges:public customer,public cabs<int,double,string>,public booking{
+    public:
+    void printBill(){
+        ofstream receipt("receipt.txt");
+        {
+            receipt<<"\t\t\t\tPak Travelers"<<endl;
+           receipt<<"--------------------------RECEIPT-------------------------------"<<endl;
+           receipt<<"-----------------------------------------------------------------"<<endl;
+           receipt<<"Customer ID:"<<customer::cusId<<endl;
+           receipt<<"\nDESCRIPTION\t\t TOTAL"<<endl<<endl;
+           receipt<<"Hotel Cost\t\t "<<booking::hotelCost<<endl;
+           receipt<<"Cab Travel Cost\t\t "<<cabs<int, double, string>::lastCabCost<<endl;
+            receipt<<"-----------------------------------------------------------------"<<endl;
+            receipt<<"Total Expenses\t\t "<<booking::hotelCost+cabs<int,double,string>::lastCabCost<<endl;
+        }
+        receipt.close();
+    }
+
+    void displayBill()
+    {
+        ifstream read("receipt.txt");
+        {   
+            if(!read)
+            cout<<"Failed to open file"<<endl;
+            while(!(read.eof()))
+            {
+                read.getline(all,999);
+                cout<<all<<endl;
+            }
+        }
+         cout<<"\n-------------------THANK YOU!!-----------------------";
+        read.close();
+    }
+    friend class menu;
+};
+
+
 int main()
 {
     return 0;
