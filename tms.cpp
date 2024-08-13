@@ -174,3 +174,75 @@ if(choice==1)
         return umer_wali;
     }
 };
+
+class booking{
+    protected:
+    int hotelChoice,pack;string retMenu;
+    static double hotelCost;
+    public:
+    booking(){}
+    void hotels(){
+        string hotel[3]={"Avari Towers","Pearl Continental","Beach Luxury Hotel"};
+        for(int i=0;i<3;i++)
+        {
+            cout<<i+1<<". "<<hotel[i]<<endl;
+        }
+    cout<<"\nSelect which hotel do you wanna book or check details of:"<<endl<<"Or press any other key to go back to the main menu"<<endl;
+    cin>>hotelChoice;
+system("CLS");
+        if(hotelChoice==1)
+        {
+            cout<<"\n\t\t\t\tWELCOME TO AVARI TOWERS!"<<endl<<"The highest rated 5 star hotel in Karachi!\nEnjoy the food, the gym, the pool, the garden, luxury suites and much more with Avari Towers"<<endl;
+            cout<<"\nPackages offered by Avari Towers:"<<endl<<endl;
+            cout<<"1.Standard Pack"<<endl;
+            cout<<"All the basic facilities you need"<<endl<<"Price:Rs 50,000.00 per night"<<endl<<endl;
+            cout<<"2.Premium Pack"<<endl;
+            cout<<"Enjoy the Premium lifestyle!"<<endl<<"Price:Rs 100,000.00 per night"<<endl<< endl;
+            cout<<"3.Luxury Pack"<<endl;
+            cout<<"Enjoy the Luxury at Avari Towers:"<<endl<<"Price:Rs 160,000.00 per night" <<endl<<endl;
+            cout<<"\nEnter which pack you want to avail\nOr press any other key to go back:"<<endl<<endl;
+            cin>>pack;
+
+
+            if(pack==1){
+                hotelCost=50000.00;
+                cout<<"\nYou have succesfully availed the Standard package at the Avari Towers!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else if(pack==2){
+                hotelCost=100000.00;
+                cout<<"\nYou have succesfully availed the Premium package at the Avari Towers!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else if(pack==3)
+            {
+                hotelCost=160000.00;
+                cout<<"\nYou have succesfully availed the Luxury package at the Avari Towers!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else
+            {
+            	system("CLS");
+            	hotels();
+			}
+           
+			cout<<"\nPress any key to return to the main menu:";
+	        getline(cin,retMenu);
+	        cin.ignore();
+	        if(retMenu=="a")
+	        {
+	        	system("cls");
+	        	menuConstructor();
+			}
+	        else
+	        {
+	        	system("cls");
+	        	menuConstructor();
+			}
+        }
+    };
+
+int main()
+{
+    return 0;
+}
