@@ -240,6 +240,105 @@ system("CLS");
 	        	menuConstructor();
 			}
         }
+
+        else if(hotelChoice==2)
+        {
+            cout<<"\n\t\t\t\tWELCOME TO PEARL CONTINENTAL!"<<endl<<"The HIGHEST rated Luxury and event hotel in Karachi!\nEnjoy the ambiance, the feel, the restaurants, the pools , fitness centers, Family rooms and much more with Pearl Continental"<<endl;
+            cout<<"\nPackages offered by Pearl Continental:"<<endl<<endl;
+            cout<<"1.Vacation Pack"<<endl;
+            cout<<"Get the full vacation experience"<<endl<<"Price:Rs 40,000.00 per night" <<endl<<endl;
+            cout<<"2.Famly Pack"<<endl;
+            cout<<"The total family package"<<endl<<"Price:Rs 60,000.00 per night"<<endl<<endl;
+            cout<<"3.Event Pack"<<endl;
+            cout<<"The package for the best event experience!"<<endl<<"Price:Rs 140,000.00 per night"<<endl<< endl;
+            
+            cout<<"\nEnter which pack you want to avail\nOr press any other key to go back:";
+            cin>>pack;
+            
+
+            if(pack==1){
+                hotelCost=40000.00;
+                cout<<"\nYou have succesfully availed the Vacation package at Pearl Continental!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else if(pack==2){
+                hotelCost=60000.00;
+                cout<<"\nYou have succesfully availed the Family package at Pearl Continental!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else if(pack==3)
+            {
+                hotelCost=140000.00;
+                cout<<"\nYou have succesfully availed the Event package at Pearl Continental!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else
+            {
+            	system("CLS");
+            	hotels();
+			}
+            
+            cout<<"\nPress any key to return to the main menu:";
+        	getline(cin,retMenu);
+        	cin.ignore();
+        	if(retMenu=="a")
+	        {
+	        	system("cls");
+	        	menuConstructor();
+			}
+	        else
+	        {
+	        	system("cls");
+	        	menuConstructor();
+			}
+    
+	    }
+
+         else if(hotelChoice==3) 
+        {
+            cout<<"\n\t\t\t\tWELCOME TO Beach Luxury Hotel!"<<endl<<"Set near the mangroves at the coast of the Arabian Sea, get ready for an adventure like never before at the Beach Luxury Hotel!"<<endl;
+            cout<<"\nPackages offered by Beach Luxury Hotel:"<<endl<<endl;
+            cout<<"1.Beach Pack"<<endl;
+            cout<<"Book your own hut at the beach and enjoy the wonders"<<endl<<"Price:Rs 55,000.00 per day" <<endl<<endl;
+            cout<<"2.Special Pack"<<endl;
+            cout<<"Get the full access to all the facilities"<<endl<<"Price:Rs 90,000.00 per day"<<endl<<endl;
+            
+            cout<<"\nEnter which pack you want to avail\nOr press any other key to go back:";
+            cin>>pack;
+
+            if(pack==1){
+                hotelCost=55000.00;
+                cout<<"\nYou have succesfully availed the Beach package at the Beach Luxury hotel!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else if(pack==2){
+                hotelCost=90000.00;
+                cout<<"\nYou have succesfully availed the Special package at the Beach Luxury hotel!"<<endl;
+                cout<<"You can get your receipt from the main menu:"<<endl;
+            }
+            else
+            {
+            	system("cls");
+            	hotels();
+			}
+            cout<<"Press any key to return to the main menu:";
+            getline(cin,retMenu);
+            cin.ignore();
+            system("CLS");
+            if(retMenu=="a")
+            menuConstructor();
+            else
+            menuConstructor();
+        }
+        else
+        {
+            system("CLS");
+            menuConstructor();
+        }
+
+    }
+friend class menu;
+    
     };
 
 int main()
