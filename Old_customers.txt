@@ -1,0 +1,24 @@
+
+
+Customer ID:444
+Customer Name:arham
+Age:50
+Mobile number:31578965
+Adress:gulshan
+Gender:m
+
+
+Customer ID:789
+Customer Name:adil
+Age:45
+Mobile number:03158984488
+Adress:numaish
+Gender:m
+
+
+Customer ID:887
+Customer Name:alia
+Age:33
+Mobile number:0314748364
+Adress:pechs
+Gender:f
