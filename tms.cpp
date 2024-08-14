@@ -399,6 +399,34 @@ class menu{
         cin>>mainChoice;
         system("CLS");
 
+        customer cus;
+        cabs<int,double,string> cab;booking bk;
+        charges cha;
+        if(mainChoice==1)
+        {
+            cout<<"----------------------------------Customers----------------------------------\n" << endl;
+            cout<<"1. Enter a New Customer"<<endl;
+            cout <<"2. See Previous Customers"<<endl;
+            cout<<"\nENTER YOUR CHOICE"<<endl<<"Or press any key to return to the main menu: ";
+            cin>>inChoice;
+            if(inChoice==1){
+            cus.getDetails();
+            }
+            else if(inChoice==2){
+               cus.showDetails();
+            }
+            else
+            menu();
+                cout<<"Press any key to return to the main menu:";
+            getline(cin, ret);
+            cin.ignore();
+            system("cls");
+            if(ret=="a")
+            menuConstructor();
+            else
+            menuConstructor();
+        }
+
 int main()
 {
     return 0;
