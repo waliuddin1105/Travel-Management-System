@@ -379,6 +379,25 @@ class charges:public customer,public cabs<int,double,string>,public booking{
     friend class menu;
 };
 
+class menu{
+    int mainChoice,inChoice;string ret;
+    
+    public:
+    menu(){
+     cout<<"\t\t\t\t\t* Pak Travels By Wali And Umer *\n"<<endl;
+    cout<<"--------------------------------------------------Main Menu---------------------------------------------------"<<endl;
+    cout<<"\t\t\t\t    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "<<endl;
+    cout<<"\t\t\t\t   |\t\t\t\t\t   |"<<endl;
+    cout<<"\t\t\t\t   |\tCustomer Management -> 1\t   |"<<endl;
+    cout<<"\t\t\t\t   |\tCabs Management     -> 2\t   |"<<endl;
+    cout<<"\t\t\t\t   |\tBookings Management -> 3\t   |"<<endl;
+    cout<<"\t\t\t\t   |\tCharges & Bill      -> 4\t   |"<<endl;
+    cout<<"\t\t\t\t   |\tExit                -> 5\t   |"<<endl;
+    cout<<"\t\t\t\t   |\t\t\t\t\t   |"<<endl;
+    cout<<"\t\t\t\t   |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|"<<endl;
+    cout<<"\nEnter your choice:";
+        cin>>mainChoice;
+        system("CLS");
 
 int main()
 {
