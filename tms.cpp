@@ -427,6 +427,41 @@ class menu{
             menuConstructor();
         }
 
+        
+        else if(mainChoice==2){
+            cab.cabDetails();
+        }
+        else if(mainChoice==3){
+            cout<<"\nBook the best hotels using our system!!"<<endl;
+            bk.hotels();
+
+        }
+        else if(mainChoice==4){
+            cout<<"------------------GET YOUR RECEIPT------------------"<<endl<<endl;
+            cha.printBill();
+            cout<<"\nYour receipt has already been printed, it can be accessed from the file path"<<endl;
+            cout<<"\n To display the receipt here press 1 or press any other key to go back to the main menu: ";
+            cin>>ret;
+            if(ret=="1")
+            {
+                cha.displayBill();
+                cout<<"\n press any key to return to the main menu:";
+                cin>>ret;
+                system("CLS");
+                if(ret=="a")
+                menu();
+                else
+                menu();
+            }
+            else
+            {
+                system("CLS");
+                menu();
+            }
+            
+        }
+    }
+};
 int main()
 {
     return 0;
