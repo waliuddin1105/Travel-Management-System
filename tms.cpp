@@ -62,6 +62,22 @@ class customer{
         }
         out<<"\n\nCustomer ID:"<<cusId<<endl<<"Customer Name:"<<name<<endl<<"Age:"<<age<<endl<<"Mobile number:"<<mobile<<endl<<"Adress:"<<adress<<endl<<"Gender:"<<gender<<endl;
     }
+
+    void showDetails(){
+        ifstream in("Old_customers.txt");
+        {
+            if(!in)
+            {
+                cout<<"Failed to open file"<<endl;
+            }
+            while(!(in.eof()))
+            {
+                in.getline(all, 999);
+                cout<<all<<endl;
+            }
+            in.close();
+        }
+    } 
      friend class menu;
 };
 int customer::cusId=0;
@@ -462,7 +478,13 @@ class menu{
         }
     }
 };
+
+void menuConstructor(){
+    menu m;
+}
+
 int main()
 {
+     manageMenu <string>mm;
     return 0;
 }
