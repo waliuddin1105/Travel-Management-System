@@ -6,10 +6,15 @@
 
 <hr>
 
-<h2>📖 Overview</h2>
+<h2>📖 About the Project</h2>
 <p>
-  The <b>Travel Management System</b> is a menu-driven C++ project designed to automate and simplify travel-related tasks. 
-  It allows users to register customers, book cabs and hotels, and generate detailed billing receipts — all through a simple text-based interface.
+  The <b>Travel Management System</b> was one of my very first projects and also my first proper fully object-oriented C++ project. 
+  It helped me understand the core concepts of OOP such as classes, inheritance, encapsulation, and modular programming. 
+  Through this project, I also learned how to work with <b>file handling and data management</b>, manage persistent records, and apply <b>exception handling</b> 
+  to ensure stable program behavior. In addition, I explored the use of <b>template classes</b> to make certain parts of the code more flexible and reusable.
+  <br><br>
+  The system provides a menu-driven interface that allows users to register customers, book cabs and hotels, and generate complete billing receipts — 
+  all through simple console interaction.
 </p>
 
 <hr>
@@ -28,7 +33,7 @@
 
 <h2>🏗️ Technologies Used</h2>
 <ul>
-  <li>C++ (OOP, File Handling, Exception Handling)</li>
+  <li>C++ (OOP, File Handling, Exception Handling, Templates)</li>
   <li>Standard Template Library (STL)</li>
   <li>Text-based Console UI</li>
 </ul>
@@ -39,12 +44,11 @@
 
 <pre>
 📁 TravelManagementSystem/
-├── main.cpp                # Entry point and main menu
-├── customer.h / customer.cpp   # Customer registration and data handling
-├── cab.h / cab.cpp             # Cab booking logic
-├── hotel.h / hotel.cpp         # Hotel booking logic
-├── receipt.h / receipt.cpp     # Billing and receipt generation
-└── README.html                 # Project documentation
+├── tms.cpp             # Main source file containing all program logic
+├── tms.exe             # Compiled executable
+├── old_customers.txt   # Stores previously registered customers
+├── receipt.txt         # Stores generated billing receipts
+└── README.html         # Project documentation
 </pre>
 
 <hr>
@@ -54,29 +58,20 @@
 <h3>1️⃣ Clone the Repository</h3>
 
 <pre>
-git clone https://github.com/yourusername/Travel-Management-System.git
+git clone https://github.com/waliuddin1105/Travel-Management-System.git
 </pre>
 
 <h3>2️⃣ Compile the Project</h3>
 
 <pre>
-g++ main.cpp -o travel.exe
+g++ tms.cpp -o tms.exe
 </pre>
 
 <h3>3️⃣ Run the Program</h3>
 
 <pre>
-./travel.exe
+./tms.exe
 </pre>
-
-<hr>
-
-<h2>📸 Screenshots</h2>
-
-<p align="center">
-  <img src="https://via.placeholder.com/700x400?text=Main+Menu+Preview" alt="Main Menu Preview">
-  <br><em>Main Menu of the Travel Management System</em>
-</p>
 
 <hr>
 
@@ -98,20 +93,11 @@ Customer record saved successfully!
 
 <hr>
 
-<h2>💡 Future Enhancements</h2>
-<ul>
-  <li>🔐 Add user authentication system</li>
-  <li>🌐 Add GUI version using Python (Dear ImGui / Tkinter / Flask)</li>
-  <li>📊 Integrate a database (MySQL or SQLite) for better record management</li>
-</ul>
-
-<hr>
-
 <h2>🧑‍💻 Author</h2>
 <p>
   Developed by <b>Wali</b><br>
-  📧 <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-  🌐 <a href="https://github.com/yourusername">GitHub Profile</a>
+  📧 <a href="mailto:waliahmed1105@gmail.com">waliahmed1105@gmail.com</a><br>
+  🌐 <a href="https://github.com/waliuddin1105" target="_blank">GitHub Profile</a>
 </p>
 
 <hr>
